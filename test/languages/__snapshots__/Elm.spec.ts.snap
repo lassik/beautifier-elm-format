@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should successfully beautify Elm files should successfully beautify file Test.elm 1`] = `
+Object {
+  Symbol(raw): "module Main exposing (..)
+
+import List
+
+
+main =
+    List.concat
+        [ 1
+        , 2
+        , 3
+        ]
+        [ 4
+        , 5
+        , 6
+        ]
+",
+}
+`;

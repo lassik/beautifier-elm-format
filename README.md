@@ -1,13 +1,13 @@
-# beautifier-{{ dashedName }}
+# beautifier-elm-format
 
-[![Build Status](https://travis-ci.com/Unibeautify/beautifier-{{ dashedName }}.svg?branch=master)](https://travis-ci.com/Unibeautify/beautifier-{{ dashedName }}) [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovateapp.com/)
+[![Build Status](https://travis-ci.com/Unibeautify/beautifier-elm-format.svg?branch=master)](https://travis-ci.com/Unibeautify/beautifier-elm-format) [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovateapp.com/)
 
-> [{{ name }}]({{homepageUrl}}) beautifier for [Unibeautify](https://github.com/Unibeautify)
+> [elm-format](https://github.com/avh4/elm-format) beautifier for [Unibeautify](https://github.com/Unibeautify)
 
 ## Installation
 
 ```bash
-npm install --global @unibeautify/beautifier-{{dashedName}}
+npm install --global @unibeautify/beautifier-elm-format
 ```
 
 ## Contributing
