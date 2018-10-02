@@ -22,7 +22,7 @@ function testFile(fixtureFileName: string) {
       .beautify({
         languageName: "Elm",
         options: {},
-        text
+        text,
       })
       .then(results => {
         expect(raw(results)).toMatchSnapshot();

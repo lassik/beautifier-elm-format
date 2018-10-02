@@ -2,7 +2,7 @@ import {
   Beautifier,
   BeautifierBeautifyData,
   DependencyType,
-  ExecutableDependency
+  ExecutableDependency,
 } from "unibeautify";
 import * as readPkgUp from "read-pkg-up";
 import options from "./options";
@@ -20,11 +20,11 @@ export const beautifier: Beautifier = {
       homepageUrl: "https://github.com/avh4/elm-format",
       installationUrl: "https://github.com/avh4/elm-format#installation-",
       bugsUrl: "https://github.com/avh4/elm-format/issues",
-      badges: []
-    }
+      badges: [],
+    },
   ],
   options: {
-    Elm: {}
+    Elm: {},
   },
   beautify({
     text,
@@ -32,7 +32,7 @@ export const beautifier: Beautifier = {
     filePath,
     projectPath,
     dependencies,
-    beautifierConfig
+    beautifierConfig,
   }: BeautifierBeautifyData) {
     const elmFormat = dependencies.get<ExecutableDependency>("elm-format");
     const args = ["--yes", "--stdin"];
@@ -44,6 +44,6 @@ export const beautifier: Beautifier = {
         }
         return Promise.resolve(stdout);
       });
-  }
+  },
 };
 export default beautifier;
